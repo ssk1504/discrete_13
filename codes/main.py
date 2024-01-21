@@ -1,20 +1,24 @@
 import matplotlib.pyplot as plt
 
-def stem_plot(x_values, y_values, highlight_index=None):
-    plt.stem(x_values, y_values, linefmt='-', markerfmt='.', basefmt=' ')
+def stem_plot_from_file(file_path, highlight_index=None):
+    with open(file_path, 'r') as file:
+        coordinates = [list(map(int, line.split())) for line in file]
+
+    n_values, x_values = zip(*coordinates)
+
+    plt.stem(n_values, x_values, linefmt='-', markerfmt='.', basefmt=' ')
     if highlight_index is not None:
-        plt.stem(x_values[highlight_index], y_values[highlight_index], linefmt='r-', markerfmt='ro', basefmt=' ')
+        plt.stem(n_values[highlight_index], x_values[highlight_index], linefmt='r-', markerfmt='ro', basefmt=' ')
 
-# Generate the sequence x(n) = 8 + 6n for n = 0 to 30
-n_values = list(range(31))
-x_values = [8 + 6 * n for n in n_values]
+    plt.xlabel('n')
+    plt.ylabel('x(n)')
+    plt.title('Stem Plot of x(n) = 8 + 6n')
+    plt.grid(True)
+    plt.show()
+    plt.savefig("plot.png")
 
-# Plot the stem plot with the highlighted point at n=26 in red
+# Call the function with the file path and highlight index
+file_path = 'coordinates.txt'
 highlight_index = 26
-stem_plot(n_values, x_values, highlight_index)
+stem_plot_from_file(file_path, highlight_index)
 
-plt.xlabel('n')
-plt.ylabel('x(n)')
-plt.title('Stem Plot of x(n) = 8 + 6n')
-plt.grid(True)
-plt.show()

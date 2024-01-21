@@ -26,43 +26,43 @@
 
 \section*{Exercise 9.2}
 
-\noindent \textbf{13} \hspace{2pt}If the sum of $n$ terms of an A.P. is $3n^2+5n$ and its $m^{th}$ term is 164, find the value of $m$ and obtain the Z-transform of the series.
+\noindent \textbf{13} \hspace{2pt}If the sum of $n$ terms of an A.P. is $3n^2+5n$ and its $m^{th}$ term is 164, find the value of $m$.
 \bigskip
 
 \noindent Solution:
 \noindent
 \begin{align}
-S(n) &= 3\brak{n+1}^2 + 5\brak{n+1}\\
-x\brak{n} &= \brak{x\brak{0} + nd}\brak{u\brak{n}}
-\end{align}
-
-\begin{align}
-   S_0 &= 8\\
-   S_1 &=22\\
-    d &= 6\\
-    m &= 26\\
-    x \brak{n} &= \brak{8 + 6n} \brak{u\brak{n}} \label{x(n)}
+y(n) &= 3\brak{n+1}^2 + 5\brak{n+1}\\
+Y \brak{z} &= \frac{2z^2\brak{4z-1}}{\brak{z-1}^3}\\
+U\brak{z} &= \frac{1}{1-z^{-1}}\\
+y\brak{n} &= x\brak{n}*u\brak{n}\\
+%x \brak{n} &= \brak{8 + 6n} \brak{u\brak{n}} \label{x(n)}
+X\brak{z} &= \frac{Y\brak{z}}{U\brak{z}}\\
+&= \frac{8-2z^{-1}}{\brak{1-z^{-1}}^2}\\ %& \cbrak{z\in\mathbb{C} : |z^{-1}| < 1}
+x\brak{n} &= Z_{z}^{-1}\left[X\brak{z}\right]\\
+%&= \frac{z}{z-1}\left[8\left(\frac{z}{z-1}\right) - \frac{2}{z-1}\right]\\
+& = \brak{6n +8}\brak{u\brak{n}}
 \end{align}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\columnwidth]{figs/Figure_1.png}
+    \includegraphics[width=0.95\columnwidth]{figs/Figure_1.png}
     \caption{Plot of x(n) vs n}
     \label{fig:11.9.2.13.1}
 \end{figure}
 
-\begin{align}
-     x \brak{n} \system{Z} X \brak{z} 
-\end{align}
+$\therefore m$ = 26\\
 
-\begin{align}
-     X \brak{z} & = \sum_{n=-\infty}^{\infty} x \brak{n}  z^{-n}\\
-     & = \sum_{n=0}^{\infty} \brak{8 + 6n} z^{-n} & \text{using } \eqref{x(n)}\\
-     & = \frac{8-2z^{-1}}{\brak{1-z^{-1}}^2} & \cbrak{z\in\mathbb{C} : |z^{-1}| < 1}
-\end{align}
+%\begin{align}
+ %    x \brak{n} \system{Z} X \brak{z} 
+%\end{align}
 
-So, the Z-transform of the given series is 
-$$X\brak{z} = \frac{8-2z^{-1}}{\brak{1-z^{-1}}^2}$$
+%\begin{align}
+%     X \brak{z} & = \sum_{n=-\infty}^{\infty} x \brak{n}  z^{-n}\\
+%     & = \sum_{n=0}^{\infty} \brak{8 + 6n} z^{-n} \\
+%     & = \frac{8-2z^{-1}}{\brak{1-z^{-1}}^2} & \cbrak{z\in\mathbb{C} : %|z^{-1}| < 1}
+%\end{align}
+
 
 \input{tables/table1}
 

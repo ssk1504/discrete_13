@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  21 JAN 2024 02:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  21 JAN 2024 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -881,13 +881,13 @@ LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 12.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 12.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1012,20 +1012,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
 Package pdftex.def Info: figs/Figure_1.png  used on input line 49.
-(pdftex.def)             Requested size: 252.0pt x 263.45567pt.
+(pdftex.def)             Requested size: 239.39923pt x 250.28201pt.
 
-! Undefined control sequence.
-<argument>  x \brak {n} \system 
-                                {Z} X \brak {z} 
-l.56 \end{align}
-                
-? 
-! Undefined control sequence.
-<argument>  x \brak {n} \system 
-                                {Z} X \brak {z} 
-l.56 \end{align}
-                
-? 
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
 (./tables/table1.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 9.
@@ -1034,32 +1026,34 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/Figure_1.png>] (./main.aux) ) 
+ <./figs/Figure_1.png>] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 21207 strings out of 478287
- 448746 string characters out of 5849289
- 703095 words of memory out of 5000000
- 38902 multiletter control sequences out of 15000+600000
+ 21204 strings out of 478287
+ 448722 string characters out of 5849289
+ 700081 words of memory out of 5000000
+ 38901 multiletter control sequences out of 15000+600000
  650920 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 117i,12n,120p,408b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
-athit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/font
-s/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
-}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1
-/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
-Output written on main.pdf (1 page, 201374 bytes).
+ 117i,10n,120p,408b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+mi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/txfonts/txsya.pfb>
+Output written on main.pdf (1 page, 192924 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
