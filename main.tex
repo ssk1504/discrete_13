@@ -53,7 +53,7 @@ x\brak{n} &= Z_{z}^{-1}\left[2\left(\frac{1}{1-z^{-1}}\right) + 6\left(\frac{1}{
 The inverse $Z-$transform using Contour integration is given by,
 \begin{align}
     Z_z^{-1} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
-    &= \frac{1}{2\pi j}\oint_C \frac{z^2}{\brak{z-1}^2}\\
+    &= \frac{1}{2\pi j}\oint_C \frac{z^{n+1}}{\brak{z-1}^2}\\
     &= \frac{1}{\brak{2-1}!}\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]_{z=1}\\
     &= \brak{n+1}\brak{u\brak{n}}\\
     x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
