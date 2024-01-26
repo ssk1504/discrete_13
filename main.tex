@@ -36,34 +36,41 @@ Y\brak{z} &=  \sum_{n=0}^{\infty} y\brak{n}z^{-n} \\
 &= \frac{2\brak{4-z^{-1}}}{\brak{1-z^{-1}}^3}, \qquad |z| > 1\\
 U\brak{z} &= \frac{1}{1-z^{-1}}, \qquad |z| > 1\\
 X\brak{z} &=  \frac{Y\brak{z}}{U\brak{z}}\\
-x\brak{n} &= Z_{z}^{-1}\left[2\left(\frac{1}{1-z^{-1}}\right) + 6\left(\frac{1}{1-z^{-1}}\right) ^2\right]\\
+x\brak{n} &= Z_{z}^{-1}\left[2\left(\frac{1}{1-z^{-1}}\right) + 6\left(\frac{1}{1-z^{-1}}\right) ^2\right]
 \end{align}
 
-In order to compute the Z-inverse of \begin{align} X\brak{z} &= (1-z^{-1})^{-2} \end{align} we develop the Power series for the function\\ $(1-x)^{-2}$.
-\begin{align}\brak{1-x}^{- \brak{\beta + 1}} &= \sum_{n=0}^{\infty} \binom{n+\beta}{\beta}x^n \end{align}
-for $x=z^{-1}$ and $\beta = 1$,
-\begin{align}(1-z^{-1})^{-2} = \sum_{n=0}^{\infty} \binom{n+1}{1} z^{-n}\end{align}
-Comparing with the definition of $Z-$transform,\\
+%In order to compute the Z-inverse of \begin{align} X\brak{z} &= (1-z^{-1})^{-2} \end{align} we develop the Power series for the function\\ $(1-x)^{-2}$.
+%\begin{align}\brak{1-x}^{- \brak{\beta + 1}} &= \sum_{n=0}^{\infty} \binom{n+\beta}{\beta}x^n \end{align}
+%for $x=z^{-1}$ and $\beta = 1$,
+%\begin{align}(1-z^{-1})^{-2} = \sum_{n=0}^{\infty} \binom{n+1}{1} z^{-n}\end{align}
+%Comparing with the definition of $Z-$transform,\\
+%\begin{align}
+ %   Z_{z}^{-1}\left(\frac{1}{1-z^{-1}}\right)^2 &= \brak{n+1}\brak{u\brak{n}}\\
+ %   x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
+ %   164 &= \brak{6m+8}\brak{u\brak{n}}\\
+ %   m &= 26
+%\end{align}
+The inverse $Z-$transform using Contour integration is given by,
 \begin{align}
-    Z_{z}^{-1}\left(\frac{1}{1-z^{-1}}\right)^2 &= \brak{n+1}\brak{u\brak{n}}\\
+    Z_z^{-1} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
+    &= \frac{1}{2\pi j}\oint_C \frac{z^2}{\brak{z-1}^2}\\
+    &= \frac{1}{\brak{2-1}!}\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]_{z=1}\\
+    &= \brak{n+1}\brak{u\brak{n}}\\
     x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
     164 &= \brak{6m+8}\brak{u\brak{n}}\\
     m &= 26
 \end{align}
 
-%&= \brak{6n+8}\brak{u\brak{n}}\\
-%164 &= \brak{6m+8}\brak{u\brak{n}}\\
-%m &= 26
+\input{tables/table1}
 
 
-
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\columnwidth]{figs/Figure_1.png}
+    \includegraphics[width=1.0\columnwidth]{figs/Figure_1.png}
     \caption{Plot of x(n) vs n}
     \label{fig:11.9.2.13.1}
 \end{figure}
 
-\input{tables/table1}
+%\input{tables/table1}
 
 \end{document}
