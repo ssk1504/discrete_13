@@ -54,7 +54,7 @@ The inverse $Z-$transform of $\brak{1-z^{-1}}^{-2}$ using Contour integration is
 \begin{align}
     Z_z^{-1} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
     &= \frac{1}{2\pi j}\oint_C \frac{z^{n+1}}{\brak{z-1}^2}\\
-    &= \frac{1}{\brak{2-1}!}\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]_{z=1}\\
+    &= \frac{1}{\brak{2-1}!} \lim_{z \to\ 1}{\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]}\\
     &= \brak{n+1}\brak{u\brak{n}} \label{eq:eq11.9.2.13.2}
 \end{align}
 
@@ -74,7 +74,7 @@ From \eqref{eq:eq11.9.2.13.1} and \eqref{eq:eq11.9.2.13.2}
     \centering
     \includegraphics[width=1.0\columnwidth]{figs/Figure_1.png}
     \caption{Plot of x(n) vs n}
-    %\label{fig:11.9.2.13.1}
+    \label{fig:11.9.2.13.1}
 \end{figure}
 
 %\input{tables/table1}
