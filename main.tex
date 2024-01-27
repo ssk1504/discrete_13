@@ -55,8 +55,14 @@ The inverse $Z-$transform of $\brak{1-z^{-1}}^{-2}$ using Contour integration is
     Z_z^{-1} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
     &= \frac{1}{2\pi j}\oint_C \frac{z^{n+1}}{\brak{z-1}^2}\\
     &= \frac{1}{\brak{2-1}!}\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]_{z=1}\\
-    &= \brak{n+1}\brak{u\brak{n}}\\
-    x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
+    &= \brak{n+1}\brak{u\brak{n}}
+\end{align}
+
+From eq(5) and eq(9)
+
+\begin{align}
+    x\brak{n} &= \brak{2 + 6\brak{n+1}}\brak{u\brak{n}}\\
+    &= \brak{6n+8}\brak{u\brak{n}}\\
     164 &= \brak{6m+8}\brak{u\brak{n}}\\
     m &= 26
 \end{align}
