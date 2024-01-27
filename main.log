@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  27 JAN 2024 08:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  27 JAN 2024 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,10 +1025,10 @@ Package pdftex.def Info: figs/Figure_1.png  used on input line 75.
 
  <./figs/Figure_1.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 21206 strings out of 478287
- 448740 string characters out of 5849289
- 706087 words of memory out of 5000000
- 38901 multiletter control sequences out of 15000+600000
+ 21208 strings out of 478287
+ 448776 string characters out of 5849289
+ 706104 words of memory out of 5000000
+ 38903 multiletter control sequences out of 15000+600000
  650920 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  117i,12n,120p,408b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1048,7 +1048,7 @@ e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.
 pfb>
-Output written on main.pdf (1 page, 252121 bytes).
+Output written on main.pdf (1 page, 251952 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

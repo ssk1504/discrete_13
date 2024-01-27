@@ -36,7 +36,7 @@ Y\brak{z} &=  \sum_{n=0}^{\infty} y\brak{n}z^{-n} \\
 &= \frac{2\brak{4-z^{-1}}}{\brak{1-z^{-1}}^3}, \qquad |z| > 1\\
 U\brak{z} &= \frac{1}{1-z^{-1}}, \qquad |z| > 1\\
 X\brak{z} &=  \frac{Y\brak{z}}{U\brak{z}}\\
-x\brak{n} &= Z_{z}^{-1}\left[2\left(\frac{1}{1-z^{-1}}\right) + 6\left(\frac{1}{1-z^{-1}}\right) ^2\right]
+x\brak{n} &= Z_{z}^{-1}\left[2\left(\frac{1}{1-z^{-1}}\right) + 6\left(\frac{1}{1-z^{-1}}\right) ^2\right] \label{eq:eq11.9.2.13.1}
 \end{align}
 
 %In order to compute the Z-inverse of \begin{align} X\brak{z} &= (1-z^{-1})^{-2} \end{align} we develop the Power series for the function\\ $(1-x)^{-2}$.
@@ -55,10 +55,10 @@ The inverse $Z-$transform of $\brak{1-z^{-1}}^{-2}$ using Contour integration is
     Z_z^{-1} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
     &= \frac{1}{2\pi j}\oint_C \frac{z^{n+1}}{\brak{z-1}^2}\\
     &= \frac{1}{\brak{2-1}!}\left[ \frac{d}{dz}\left(\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2}\right) \right]_{z=1}\\
-    &= \brak{n+1}\brak{u\brak{n}}
+    &= \brak{n+1}\brak{u\brak{n}} \label{eq:eq11.9.2.13.2}
 \end{align}
 
-From eq(5) and eq(9)
+From \eqref{eq:eq11.9.2.13.1} and \eqref{eq:eq11.9.2.13.2}
 
 \begin{align}
     x\brak{n} &= \brak{2 + 6\brak{n+1}}\brak{u\brak{n}}\\
@@ -74,7 +74,7 @@ From eq(5) and eq(9)
     \centering
     \includegraphics[width=1.0\columnwidth]{figs/Figure_1.png}
     \caption{Plot of x(n) vs n}
-    \label{fig:11.9.2.13.1}
+    %\label{fig:11.9.2.13.1}
 \end{figure}
 
 %\input{tables/table1}
