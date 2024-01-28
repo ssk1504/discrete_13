@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  28 JAN 2024 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  28 JAN 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,7 +1009,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 29.
 
-Overfull \hbox (3.94225pt too wide) detected at line 58
+Overfull \hbox (3.94225pt too wide) detected at line 55
 []
  []
 
@@ -1022,7 +1022,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <figs/Figure_1.png, id=4, 556.479pt x 581.7735pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 65.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 62.
 (pdftex.def)             Requested size: 252.0pt x 263.45567pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1048,7 +1048,7 @@ lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on main.pdf (1 page, 202859 bytes).
+Output written on main.pdf (1 page, 202142 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
