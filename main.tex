@@ -26,11 +26,11 @@
 
 \section*{Exercise 9.2}
 
-\noindent \textbf{13} \hspace{2pt}If the sum of $n$ terms of an A.P. is $3n^2+5n$ and its $m^{th}$ term is 164, find the value of $m$.
+13. \hspace{2pt}If the sum of $n$ terms of an A.P. is $3n^2+5n$ and its $m^{th}$ term is 164, find the value of $m$.
 \bigskip
 
-\solution:
-\noindent
+\solution
+
 \begin{align}
 Y\brak{z} &=  \sum_{n=0}^{\infty} y\brak{n}z^{-n} \\
 &= \frac{2\brak{4-z^{-1}}}{\brak{1-z^{-1}}^3}, \qquad |z| > 1\\
@@ -44,9 +44,6 @@ X\brak{z} &=  \frac{Y\brak{z}}{U\brak{z}}\\
 Using Contour Integration to find the inverse Z-transform,
 \begin{align}
     x\sbrak{n} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
-   % &= \frac{1}{2\pi j}\oint_C \frac{z^{n+1}}{\brak{z-1}^2}\\
-    %&= \frac{1}{\brak{2-1}!} \lim_{z \to\ 1}{\sbrak{\frac{d}{dz}\brak{z-1}^2 \frac{z^{n+1}}{\brak{z-1}^2} }}\\
-    %&= \brak{n+1}\brak{u\brak{n}} \label{eq:eq11.9.2.13.2}
     &= \frac{1}{2\pi j}\oint_C \frac{\brak{8z^{n+1} - 2z^{n}}dz}{\brak{z-1}^2}
 \end{align}
 We can observe that the pole is repeated 2 times and thus $m$ = 2,
@@ -56,7 +53,7 @@ We can observe that the pole is repeated 2 times and thus $m$ = 2,
     &= \lim_{z\to 1}\brak{8\brak{n+1}z^n - 2nz^{n-1}}\\
     &= 6n+8\\
     \implies x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
-    164 &= \brak{6m+8}\brak{u\brak{n}}\\
+    164 &= \brak{6m+8}\brak{u\brak{m}}\\
     \implies m &= 26
 \end{align}
 
@@ -69,7 +66,5 @@ We can observe that the pole is repeated 2 times and thus $m$ = 2,
     \caption{Plot of x(n) vs n}
     \label{fig:11.9.2.13.1}
 \end{figure}
-
-%\input{tables/table1}
 
 \end{document}
