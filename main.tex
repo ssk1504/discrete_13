@@ -46,7 +46,7 @@ Using Contour Integration to find the inverse Z-transform,
     x\sbrak{n} &= \frac{1}{2\pi j}\oint_C X\brak{z}z^{n-1}dz\\
     &= \frac{1}{2\pi j}\oint_C \frac{\brak{8z^{n+1} - 2z^{n}}dz}{\brak{z-1}^2}\\
     x\sbrak{n} &= \frac{1}{\brak{m-1}!}\lim_{z\to\ a}\frac{d^{m-1}}{dz^{m-1}}\brak{\brak{z-a}^m f\brak{z}}\\
-    &= \frac{1}{\brak{2-1}!}\lim_{z\to\ 1}\frac{d}{dz}\brak{\brak{z-1}^2 \frac{8z^{n+1} - 2z^n}{\brak{z-1}^2}}\\
+    &= \lim_{z\to\ 1}\frac{d}{dz}\brak{\brak{z-1}^2 \frac{8z^{n+1} - 2z^n}{\brak{z-1}^2}}\\
     &= \lim_{z\to 1}\brak{8\brak{n+1}z^n - 2nz^{n-1}}\\
     &= 6n+8\\
     \implies x\brak{n} &= \brak{6n+8}\brak{u\brak{n}}\\
